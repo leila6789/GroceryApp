@@ -5,7 +5,21 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
-export default function HomeScreen() {
+
+
+export default function Home() {
+  return (
+    <main className="flex flex-col items-center justify-center min-h-screen bg-white">
+      <h1 className="text-4xl font-bold text-blue-600">Welcome to Receipt Tracker</h1>
+      <p className="text-gray-700 mt-2">Track and organize your purchases easily.</p>
+      <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+        Get Started
+      </button>
+    </main>
+  );
+}
+
+/*export default function HomeScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
@@ -72,3 +86,4 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
 });
+*/
